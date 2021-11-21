@@ -1,0 +1,35 @@
+.row--gap {
+    row-gap: 24px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border-radius: 10px;
+
+    &-title {
+        color: $colour-dark;
+    }
+
+    &-text {
+        color: $colour-grey;
+    }
+
+    .card-img, .card-img-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    button {
+        width: 100%;
+        border-radius: 4px !important;
+        border-right: 1.5rem solid $colour-grey;
+        border-left: 1.5rem solid $colour-primary;
+        text-transform: uppercase;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+}

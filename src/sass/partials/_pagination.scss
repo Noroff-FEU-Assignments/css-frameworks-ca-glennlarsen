@@ -1,0 +1,11 @@
+.pagination {
+  margin: 2.5rem 0;
+
+  &:last-of-type {
+      margin-bottom: 5rem;
+  }
+}
+
+.page-link {
+    padding: 0.475rem 0.95rem;
+}

@@ -1,0 +1,35 @@
+.info--group {
+  color: $colour-grey;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  row-gap: 2rem;
+  margin-top: 3rem;
+  font-weight: bold;
+
+  @media (min-width: 768px) {
+    margin-left: 3rem;
+    margin-top: 7rem;
+  }
+
+  .fas {
+    font-size: 2rem;
+    vertical-align: middle;
+  }
+
+  span {
+    margin-left: 2rem;
+  }
+
+  &-address {
+    color: $colour-grey;
+    text-decoration: none;
+    span:not(:first-of-type) {
+      margin-left: 3.5rem;
+    }
+
+    &:hover {
+        color: inherit;
+    }
+  }
+}

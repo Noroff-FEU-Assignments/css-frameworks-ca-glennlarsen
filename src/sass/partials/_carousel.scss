@@ -1,0 +1,25 @@
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  padding: 1rem 0.2rem;
+  margin: 0 0.5rem;
+  border-radius: 3px;
+  border-top: 0;
+  border-bottom: 0;
+  opacity: 1;
+  margin-bottom: 2rem;
+
+  &.active {
+    background-color: $colour-primary;
+  }
+}
+
+.carousel-item {
+  .d-block {
+    min-height: 320px;
+    object-fit: cover;
+  }
+}

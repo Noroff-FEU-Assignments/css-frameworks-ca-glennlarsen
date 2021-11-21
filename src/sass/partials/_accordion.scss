@@ -1,0 +1,56 @@
+.accordion {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  box-shadow: 0 16px 22px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 1.25rem !important;
+  border-top-right-radius: 1.25rem !important;
+  border-bottom-right-radius: 1.25rem !important;
+  border-bottom-left-radius: 1.25rem !important;
+
+  &-item {
+    border: none !important;
+  }
+
+  &-item:first-of-type .accordion-button,
+  &-item:first-of-type {
+    border-top-left-radius: 1.25rem !important;
+    border-top-right-radius: 1.25rem !important;
+  }
+
+  &-item:last-of-type .accordion-button.collapsed,
+  &-item:last-of-type {
+    border-bottom-right-radius: 1.25rem !important;
+    border-bottom-left-radius: 1.25rem !important;
+  }
+
+  &-item:last-of-type .accordion-body {
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
+  .accordion-header {
+    button {
+      background-color: white;
+      color: $colour-primary;
+      font-size: 1.18rem;
+
+      &::after {
+        display: none;
+      }
+      &:hover {
+        background: $colour-primary;
+        color: white;
+      }
+    }
+  }
+}
+
+.accordion-body {
+  border-top: 1px solid $colour-primary;
+  background: radial-gradient(circle at 40%, #ffffff 75%, #e5e5e5 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem;
+}

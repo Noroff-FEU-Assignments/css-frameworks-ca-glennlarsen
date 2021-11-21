@@ -1,0 +1,47 @@
+.tab-content {
+  background: white;
+  padding: 1em;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 0 16px 22px rgba(0, 0, 0, 0.2);
+  margin-top: -12px;
+  padding: 3rem;
+}
+
+.tabs--section {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.nav-tabs {
+  .nav-link.active {
+    color: $colour-dark;
+    background-color: white;
+    border-color: white;
+    border-radius: 12px 12px 0 0;
+    color: #767676;
+  }
+
+  .nav-link {
+    padding: 1rem 2.5rem;
+    color: $colour-primary;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: $colour-dark;
+      border: 0px solid transparent;
+    }
+  }
+}
+
+.tab--content--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.share--icons > * {
+  margin-right: 1rem;
+  color: $colour-dark;
+  font-weight: bold;
+  font-size: 1.3rem;
+}

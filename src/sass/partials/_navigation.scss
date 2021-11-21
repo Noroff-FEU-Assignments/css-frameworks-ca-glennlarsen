@@ -1,0 +1,65 @@
+.navbar {
+  padding: 0.8rem 0 !important;
+
+  &-light .navbar-toggler {
+    border-color: transparent;
+  }
+
+  .nav-link {
+    color: $colour-dark !important;
+    padding: 0.8rem 1.9rem !important;
+
+    &.active,
+    &:hover {
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    @media (min-width: 991px) {
+      padding: 0.1rem 0.9rem !important;
+      margin: 0rem 0.5rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.navbar-nav {
+  margin-bottom: 2.5rem !important;
+
+  @media (min-width: 991px) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.navbar-brand {
+  color: $colour-primary !important;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-right: 3rem !important;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 69px;
+  z-index: 100;
+  background: $colour-secondary;
+  width: 100%;
+  left: 0;
+  padding: 0.5rem 0 2rem 0;
+
+  @media (min-width: 991px) {
+    position: inherit;
+    padding: 0;
+  }
+}
+
+.d-flex {
+  margin: 0 1.2rem;
+}

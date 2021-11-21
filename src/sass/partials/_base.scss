@@ -1,0 +1,49 @@
+> * {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(
+    circle at 50%,
+    #ffffff 13%,
+    #e5e5e5 47%
+  ) !important;
+  margin: 0;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.btn-primary {
+  color: white !important;
+  border-radius: 0 0.25rem 0.25rem 0 !important;
+  transition: 1s;
+  border: none;
+
+  &:hover {
+    background-color: rgba($colour-primary, 0.7);
+    border-right: none;
+    border-left: none;
+  }
+}

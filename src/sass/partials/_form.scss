@@ -1,0 +1,48 @@
+.form--container {
+  background: #efefef;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: -16px;
+  margin-right: -16px;
+  font-weight: bold;
+
+  @media (min-width: 481px) {
+    position: inherit;
+    border-radius: 4px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  button {
+    width: 100%;
+    background: $colour-grey;
+    border-radius: 4px !important;
+    padding: 1rem;
+    font-size: 22px;
+  }
+
+  .form-check {
+    display: flex;
+    align-items: center;
+
+    &-input {
+      background: $colour-primary;
+      padding: 1rem;
+      border: none;
+      margin-right: 1rem;
+    }
+  }
+
+  input {
+    padding: 1rem;
+  }
+}
+
+.input-group-text {
+  border: none;
+  background: #c7c7c7;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
